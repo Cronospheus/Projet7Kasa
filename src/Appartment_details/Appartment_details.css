@@ -82,7 +82,14 @@
   }
   .CollapseAppartmentDetail {
     display: flex;
+    padding: 0 2%;
   }
+
+  .buttonCollapse {
+    padding: 2rem 0;
+    border-radius: 10px;
+  }
+
   .CountPicture {
     position: absolute;
     bottom: 10%;

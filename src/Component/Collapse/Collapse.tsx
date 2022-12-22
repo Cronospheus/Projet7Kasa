@@ -44,7 +44,7 @@ const CollapseItem: FunctionComponent<Props> = (props) => {
 
   return (
     <div className="Collapse">
-      <button className="button" onClick={toggleOpen}>
+      <button className="buttonCollapse" onClick={toggleOpen}>
         <div className="toggleButton">
           <p className="titleCollapse">{props.titleCollapse}</p>
         </div>

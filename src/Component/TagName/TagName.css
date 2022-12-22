@@ -9,12 +9,12 @@
 .tagName {
   color: white;
   background-color: #ff6060;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
   font-size: 1rem;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 350px) {
   .nameContainer {
     flex-wrap: wrap;
   }
