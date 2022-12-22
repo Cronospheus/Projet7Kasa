@@ -1,0 +1,72 @@
+.banner {
+  position: relative;
+}
+
+.img_home_desktop {
+  display: none;
+}
+
+.img_home_mobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 111px;
+  border-radius: 10px;
+}
+
+.text_banner {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  bottom: 35px;
+  left: 10%;
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .img_home_mobile {
+    display: none;
+  }
+
+  .img_home_desktop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 225px;
+    border-radius: 10px;
+    filter: brightness(0.7);
+  }
+
+  .text_banner {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 15px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 5%;
+    padding-bottom: 6rem;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    gap: 2rem;
+  }
+  .card {
+    margin: 2rem;
+    height: 340px;
+  }
+}

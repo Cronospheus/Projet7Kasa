@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 90%;
+}
+
+.logo_header {
+  height: 45px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+nav ul li {
+  color: #ff6060;
+  margin-left: 1.5rem;
+}
+
+nav ul li:hover {
+  border-bottom: 2px #ff6060 solid;
+}
+
+@media screen and (min-width: 1024px) {
+  nav ul {
+    text-transform: none;
+    font-size: 2rem;
+  }
+  .header {
+    margin-top: 5rem;
+  }
+
+  nav ul li {
+    margin-left: 5rem;
+  }
+}

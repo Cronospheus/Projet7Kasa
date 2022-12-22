@@ -1,0 +1,51 @@
+.card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.card_image {
+  display: block;
+  margin: 3rem auto;
+  height: 340px;
+  width: 90%;
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.card_title {
+  width: 30%;
+  position: absolute;
+  z-index: 11;
+  left: 10%;
+  bottom: 10%;
+  font-size: 15px;
+  color: white;
+}
+
+.card::before {
+  content: "";
+  background: linear-gradient(to bottom, transparent 70%, #404040 100%);
+  display: block;
+  z-index: 10;
+  left: 5%;
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 340px;
+  }
+
+  .card_title {
+    left: 15%;
+    bottom: 5%;
+  }
+  .card_image {
+    height: 100%;
+    z-index: 1;
+  }
+}

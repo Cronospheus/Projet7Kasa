@@ -1,0 +1,24 @@
+.nameContainer {
+  display: flex;
+}
+
+.tagContainer {
+  padding-right: 1rem;
+}
+
+.tagName {
+  color: white;
+  background-color: #ff6060;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 420px) {
+  .nameContainer {
+    flex-wrap: wrap;
+  }
+  .tagName {
+    margin: 0.5rem;
+  }
+}

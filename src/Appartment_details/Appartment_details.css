@@ -1,0 +1,106 @@
+.text {
+  color: #ff6060;
+}
+.AppartmentDetailPicture {
+  width: 100%;
+  height: 100%;
+}
+
+.appartmentTitle {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.appartmentDetails {
+  padding: 5%;
+}
+
+.location {
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.HostRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HostPicture {
+  height: 32px;
+  width: 32px;
+  border-radius: 100px;
+}
+.Host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Name {
+  text-align: end;
+  width: 50%;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+}
+.CollapseAppartmentDetail {
+  min-height: 30vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .pictureCarouselDetail {
+    height: 415px;
+  }
+  .ChevronLeft {
+    height: 8rem;
+    bottom: 0;
+    top: 35%;
+  }
+  .ChevronRight {
+    height: 8rem;
+    bottom: 0;
+    top: 35%;
+  }
+  .appartmentTitle {
+    font-size: 3.6rem;
+  }
+  .location {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+  .nameContainer {
+    padding-top: 1rem;
+  }
+  .tagName {
+    font-size: 1.4rem;
+  }
+  .HostRating {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .appartmentInfo {
+    position: absolute;
+  }
+  .CollapseAppartmentDetail {
+    display: flex;
+  }
+  .CountPicture {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    left: 50%;
+    right: 50%;
+  }
+  .Carousel {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .star {
+    height: 15px;
+    width: 15px;
+  }
+  .CountPicture {
+    display: none;
+  }
+}

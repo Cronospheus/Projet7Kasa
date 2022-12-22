@@ -1,0 +1,13 @@
+@import url("./global.css");
+@import url("./normalize.css");
+@import url("./Component/header.css");
+@import url("./Component/footer.css");
+@import url("./homepage/home.css");
+@import url("./Component/Appartment-card/Appartment-card.css");
+@import url("./aboutpage/about.css");
+@import url("./Component/Collapse/Collapse.css");
+@import url("./page-not-found/pageNotFound.css");
+@import url("./Component/Appartment_details_picture/Appartment_details_picture.css");
+@import url("./Appartment_details/Appartment_details.css");
+@import url("./Component/TagName/TagName.css");
+@import url("./Component/Rating/Rating.css");

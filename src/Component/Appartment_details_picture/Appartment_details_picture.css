@@ -1,0 +1,32 @@
+.Carousel {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pictureCarousel {
+  width: 100%;
+  height: 100%;
+}
+
+.pictureCarouselDetail {
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+}
+
+.ChevronLeft {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 5%;
+  color: white;
+}
+
+.ChevronRight {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 5%;
+  color: white;
+}

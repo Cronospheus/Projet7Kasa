@@ -1,0 +1,50 @@
+.toggleButton {
+  background: #ff6060;
+  padding-left: 1rem;
+}
+
+.button {
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  background: #ff6060;
+  height: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: center;
+}
+
+.titleCollapse {
+  background: #ff6060;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.iconCollapse {
+  padding-right: 0.5rem;
+  color: white;
+  font-size: 2rem;
+}
+.CollapseOpen {
+  background: #f6f6f6;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0 0 5px 5px;
+}
+
+.textCollapse {
+  color: #ff6060;
+  padding: 2rem 1rem 5rem 1rem;
+}
+
+.ListEquipment {
+  list-style-type: none;
+  color: #ff6060;
+  padding: 1.5rem;
+}
+.Equipment {
+  padding-top: 0.5rem;
+}
