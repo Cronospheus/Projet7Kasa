@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CollapseItem from "../Component/Collapse/Collapse";
-import Pictures from "../Component/Appartment_details_picture/Appartment_details_picture";
+import Pictures from "../Component/Gallery/Gallery";
 import TagName from "../Component/TagName/TagName";
 import Stars from "../Component/Rating/Rating";
 

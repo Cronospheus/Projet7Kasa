@@ -18,15 +18,15 @@
 .ChevronLeft {
   position: absolute;
   top: 50%;
-  bottom: 50%;
   left: 5%;
   color: white;
+  cursor: pointer;
 }
 
 .ChevronRight {
   position: absolute;
   top: 50%;
-  bottom: 50%;
   right: 5%;
   color: white;
+  cursor: pointer;
 }

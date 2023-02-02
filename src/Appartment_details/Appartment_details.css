@@ -51,13 +51,11 @@
   }
   .ChevronLeft {
     height: 8rem;
-    bottom: 0;
-    top: 35%;
+    top: 42%;
   }
   .ChevronRight {
     height: 8rem;
-    bottom: 0;
-    top: 35%;
+    top: 42%;
   }
   .appartmentTitle {
     font-size: 3.6rem;
