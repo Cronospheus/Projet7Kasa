@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState, useEffect } from "react";
+import React, { FunctionComponent, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
@@ -11,8 +11,8 @@ type Props = {
 };
 
 const picture: FunctionComponent<Props> = (props) => {
-  const [pictures, setPictures] = useState(props.pictures);
-  const [title, setTitle] = useState(props.title);
+  const [pictures] = useState(props.pictures);
+  const [title] = useState(props.title);
   const [pictureActive, setPictureActive] = useState(0);
 
   const [count, setCount] = useState(1);

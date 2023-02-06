@@ -11,7 +11,7 @@ type Props = {
 const CollapseItem: FunctionComponent<Props> = (props) => {
   const [collapse, setcollapse] = useState(false);
   const [toggle, setToggle] = useState(faChevronDown);
-  const [equipment, setEquipment] = useState(props.equipments);
+  const [equipment] = useState(props.equipments);
 
   const toggleOpen = () => {
     setcollapse(!collapse);
@@ -24,7 +24,7 @@ const CollapseItem: FunctionComponent<Props> = (props) => {
 
   useEffect(() => {
     setcollapse(collapse);
-  });
+  }, []);
 
   const displayProps = () => {
     if (typeof equipment === "object") {

@@ -1,9 +1,9 @@
 import { FunctionComponent } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import Home from "./homepage/home";
-import About from "./aboutpage/about";
-import AppartmentDetails from "./Appartment_details/Appartment_details";
-import PageNotFound from "./page-not-found/page_not_found";
+import Home from "./Page/Home/home";
+import About from "./Page/About/about";
+import AppartmentDetails from "./Page/Appartment_details/appartment_details";
+import PageNotFound from "./Page/Page_not_found/page_not_found";
 import imgHeader from "./img/logoHeader.jpg";
 import imgFooter from "./img/logoFooter.png";
 import "./style.css";
@@ -31,6 +31,7 @@ const App: FunctionComponent = () => {
           <Route path="/" element={<Home />} />
           <Route path="/apartments/:id" element={<AppartmentDetails />} />
           <Route path="/about" element={<About />} />
+          <Route path="/pageNotfound" element={<PageNotFound />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>

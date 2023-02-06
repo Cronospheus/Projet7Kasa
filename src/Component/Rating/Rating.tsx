@@ -1,32 +1,34 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent } from "react";
 import Vector from "./img/Vector.png";
 import VectorEmpty from "./img/VectorEmpty.png";
 
 type Props = {
-  rating: string;
+  rating: number;
 };
 
-const stars: FunctionComponent<Props> = (props) => {
-  const [star, setStars] = useState(props.rating);
-  const starRating = parseInt(star);
-  const stars = [];
-  const EmptyStarNumber = 5 - starRating;
-
-  for (let i = 0; i < starRating; i++) {
-    stars.push(<img className="star" src={Vector} />);
-  }
-
-  for (let i = 0; i < EmptyStarNumber; i++) {
-    stars.push(<img className="star" src={VectorEmpty} />);
-  }
-
+const Stars: FunctionComponent<Props> = (props) => {
+  const stars = [1, 2, 3, 4, 5];
   return (
     <div className="stars">
-      {stars.map((star, index) => {
-        return <span key={index}>{star}</span>;
-      })}
+      {stars.map((star) =>
+        props.rating >= star ? (
+          <img
+            key={star.toString()}
+            className="rating__icon"
+            src={Vector}
+            alt="stars"
+          />
+        ) : (
+          <img
+            key={star.toString()}
+            className="rating__icon"
+            src={VectorEmpty}
+            alt="stars"
+          />
+        )
+      )}
     </div>
   );
 };
 
-export default stars;
+export default Stars;

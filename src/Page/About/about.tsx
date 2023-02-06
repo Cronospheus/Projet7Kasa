@@ -1,7 +1,7 @@
-import React, { FunctionComponent, useState, useEffect } from "react";
+import React, { FunctionComponent } from "react";
 import ImgAboutMobile from "./img/image_about_mobile.png";
 import ImgAboutDesktop from "./img/image_about.png";
-import Collapse from "../Component/Collapse/Collapse";
+import Collapse from "../../Component/Collapse/Collapse";
 
 const About: FunctionComponent = () => {
   return (

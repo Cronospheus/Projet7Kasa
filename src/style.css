@@ -2,12 +2,12 @@
 @import url("./normalize.css");
 @import url("./Component/header.css");
 @import url("./Component/footer.css");
-@import url("./homepage/home.css");
 @import url("./Component/Appartment-card/Appartment-card.css");
-@import url("./aboutpage/about.css");
 @import url("./Component/Collapse/Collapse.css");
-@import url("./page-not-found/pageNotFound.css");
 @import url("./Component/Gallery/Gallery.css");
-@import url("./Appartment_details/Appartment_details.css");
 @import url("./Component/TagName/TagName.css");
 @import url("./Component/Rating/Rating.css");
+@import url("./Page/About/about.css");
+@import url("./Page/Appartment_details/appartment_details.css");
+@import url("./Page/Home/home.css");
+@import url("./Page/Page_not_found/pageNotFound.css");

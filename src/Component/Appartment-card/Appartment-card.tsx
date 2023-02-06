@@ -1,22 +1,15 @@
 import React, { FunctionComponent, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Card from "../Card/card";
+import { GetAppartment } from "../../Services/fetchAppartments";
+import { Appartment } from "../../Models/modelAppartment";
 
 const AppartmentCard: FunctionComponent = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(Array<Appartment>);
   const getData = () => {
-    fetch("/data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (allAppartment) {
-        setData(allAppartment);
-      });
+    GetAppartment().then(function (allAppartment: Array<Appartment>) {
+      setData(allAppartment);
+    });
   };
   useEffect(() => {
     getData();

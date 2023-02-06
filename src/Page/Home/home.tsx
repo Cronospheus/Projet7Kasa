@@ -1,7 +1,7 @@
-import { FunctionComponent, useState, useEffect } from "react";
+import { FunctionComponent } from "react";
 import ImgHomeDesktop from "./img/image_home.png";
 import ImgHomeMobile from "./img/image_home_mobile.png";
-import AppartmentCard from "../Component/Appartment-card/Appartment-card";
+import AppartmentCard from "../../Component/Appartment-card/Appartment-card";
 
 const Home: FunctionComponent = () => {
   return (

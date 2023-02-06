@@ -1,10 +1,10 @@
-import React, { FunctionComponent, useState, useEffect } from "react";
+import React, { FunctionComponent, useState } from "react";
 
 type Props = {
   tags: Array<string>;
 };
 const TagName: FunctionComponent<Props> = (props) => {
-  const [tag, setTag] = useState(props.tags);
+  const [tag] = useState(props.tags);
 
   return (
     <div className="nameContainer">

@@ -1,50 +1,25 @@
 import React, { FunctionComponent, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import CollapseItem from "../Component/Collapse/Collapse";
-import Pictures from "../Component/Gallery/Gallery";
-import TagName from "../Component/TagName/TagName";
-import Stars from "../Component/Rating/Rating";
-
-interface Appartment {
-  id: string;
-  title: string;
-  cover: string;
-  pictures: Array<string>;
-  description: string;
-  host: ApartmentHost;
-  rating: string;
-  location: string;
-  equipments: Array<string>;
-  tags: Array<string>;
-}
-
-interface ApartmentHost {
-  name: string;
-  picture: string;
-}
+import CollapseItem from "../../Component/Collapse/Collapse";
+import Pictures from "../../Component/Gallery/Gallery";
+import TagName from "../../Component/TagName/TagName";
+import Stars from "../../Component/Rating/Rating";
+import { GetAppartment } from "../../Services/fetchAppartments";
+import { Appartment } from "../../Models/modelAppartment";
 
 const AppartmentDetails: FunctionComponent = () => {
   const [data, setData] = useState<Appartment>();
   const { id } = useParams();
 
   const getData = () => {
-    fetch("/data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (allAppartment: Array<Appartment>) {
-        const AppartmentFind = allAppartment.find((item) => item.id == id);
-        if (AppartmentFind != undefined) {
-          setData(AppartmentFind);
-        } else {
-          window.location.href = "/";
-        }
-      });
+    GetAppartment().then(function (allAppartment: Array<Appartment>) {
+      const AppartmentFind = allAppartment.find((item) => item.id === id);
+      if (AppartmentFind !== undefined) {
+        setData(AppartmentFind);
+      } else {
+        window.location.href = "/pageNotfound";
+      }
+    });
   };
   useEffect(() => {
     getData();
@@ -53,7 +28,7 @@ const AppartmentDetails: FunctionComponent = () => {
   return (
     <>
       <div className="appartmentDetailPicture">
-        {data != undefined && (
+        {data !== undefined && (
           <Pictures pictures={data.pictures} title={data.title} key={data.id} />
         )}
       </div>
@@ -62,10 +37,10 @@ const AppartmentDetails: FunctionComponent = () => {
         <div className="appartmentInfo">
           <div className="appartmentTitle text">{data?.title}</div>
           <div className="location text">{data?.location}</div>
-          {data != undefined && <TagName tags={data.tags} />}
+          {data !== undefined && <TagName tags={data.tags} />}
         </div>
         <div className="HostRating">
-          {data != undefined && <Stars rating={data.rating} />}
+          {data !== undefined && <Stars rating={data.rating} />}
 
           <div className="Host">
             <div className="Name">{data?.host.name}</div>
